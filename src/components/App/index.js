@@ -18,7 +18,7 @@ export default class App extends React.Component {
 
   onChangeAddress = () => {
     this.seaport = new OpenSeaPort(web3Provider, {
-      networkName: Network.Main
+      networkName: Network.Rinkeby
     })
     this.web3 = this.seaport.web3
     this.web3.eth.getAccounts((err, res) => {
@@ -32,16 +32,16 @@ export default class App extends React.Component {
     return (
       <div>
         <a href={GITHUB_URL}>
-          <ImgRibbon src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" />
+           {/* // <ImgRibbon src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" /> */}
         </a>
         <Header>
           <h1>
-            The Ship's Log
+            Wakii's Playground
           </h1>
           <h6>
             <a target="_blank" rel="noopener noreferrer" href={OPENSEA_JS_URL}>
-              <img alt="OpenSea logo" className="mr-2" src="/opensea-logo.png" />OpenSea.js
-            </a> example dapp
+              {/* <img alt="OpenSea logo" className="mr-2" src="/opensea-logo.png" />OpenSea.js */}
+            </a> example dapp forked from Opensea
           </h6>
         </Header>
         <main>
@@ -65,14 +65,14 @@ const Header = styled.header`
   }
 `
 
-const ImgRibbon = styled.img`
-  width: 150px;
-  position: absolute;
-  top: 0;
-  right: 0;
-  border: 0;
+// const ImgRibbon = styled.img`
+//   width: 150px;
+//   position: absolute;
+//   top: 0;
+//   right: 0;
+//   border: 0;
 
-  @media(max-width: 600px) {
-    width: 80px;
-  }
-`
+//   @media(max-width: 600px) {
+//     width: 80px;
+//   }
+// `
